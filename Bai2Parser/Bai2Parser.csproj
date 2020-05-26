@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Vikas Sharma</Authors>
+    <PackageId>Bai2Parser_By_Vikas</PackageId>
+    <PackageTags>BAI Parser, BAI2 Parser, BAI to C#</PackageTags>
+    <Version>1.0.5</Version>
+    <Description>Parse BAI2 format files to C# classes, which can be used to process the data.
+The parser combines the continuation records(88) to the previous records and warps the data.
+In case of incorrect file format, an expection is returned with the incorrect warped record.</Description>
+    <PackageReleaseNotes>Updated the parser to handle commas in text field preceded by non text content in continuation record(88) within Text for record code 16.
+</PackageReleaseNotes>
+  </PropertyGroup>
+
+</Project>

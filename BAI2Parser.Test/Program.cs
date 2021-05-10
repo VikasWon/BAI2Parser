@@ -1,5 +1,6 @@
 ﻿using BaiParser;
 using System;
+using System.IO;
 
 namespace BAI2Parser.Test
 {
@@ -7,7 +8,8 @@ namespace BAI2Parser.Test
     {
         static void Main(string[] args)
         {
-            string filePath = @"C:\REL Docs\Bank Integration - Transactions\BMO\sampleBAI.txt";
+            string relativePath = @".\bai2samplefile.txt";
+            string filePath = Path.GetFullPath(relativePath);
             Bai2Parser parser = new Bai2Parser();
             var parsedContent = parser.Parse(filePath);
         }

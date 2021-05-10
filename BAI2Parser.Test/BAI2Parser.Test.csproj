@@ -6,6 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="bai2samplefile.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bai2samplefile.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Bai2Parser\Bai2Parser.csproj" />
   </ItemGroup>
 

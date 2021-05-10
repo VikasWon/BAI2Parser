@@ -11,6 +11,9 @@ The parser combines the continuation records(88) to the previous records and war
 In case of incorrect file format, an expection is returned with the incorrect warped record.</Description>
     <PackageReleaseNotes>Updated the parser to handle commas in text field preceded by non text content in continuation record(88) within Text for record code 16.
 </PackageReleaseNotes>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Bai2ParserByVikas.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
   </PropertyGroup>
 
 </Project>
